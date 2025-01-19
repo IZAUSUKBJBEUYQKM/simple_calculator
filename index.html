@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4ece1; /* Light beige background */
+      margin: 0;
+    }
+
+    .calculator { 
+      width: 300px;
+      background: #d9b88c; /* Light brown background */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      color: #3e2c24; /* Dark brown text */
+      flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    }
+
+  .display {
+    width: 100%;
+    max-width: 285px; /* To prevent stretching beyond the parent padding */
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: right;
+    padding: 8px;
+    margin-bottom: 20px;
+    background: #ede3d2; /* Beige background for display */
+    color: #3e2c24; /* Dark brown text */
+}
+
+    .buttons { 
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button { 
+      height: 50px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #b08968; /* Medium brown background */
+      color: #fff5e1; /* Light beige text */
+      transition: background 0.3s;
+    }
+
+    button:hover { 
+      background: #8c6c5b; /* Darker brown on hover */
+    }
+
+    .operator { 
+      background: #b08968;
+    }
+
+    .equals { 
+      grid-column: span 2;
+      background: #b08968;
+    }
+
+    .equals:hover, .operator:hover { 
+      background: #8c6c5b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">*</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+      <button>0</button>
+      <button>C</button>
+      <button class="equals">=</button>
+      <button class="operator">+</button>
+      <button>&lt;3</button>
+    </div>
+  </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
